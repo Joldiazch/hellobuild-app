@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## IMPORTANT
+You need to generate a [Personal access tokens](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) and replace it in the ".env.development" file and in the "next.config.js" file in the root folder. 
+
 ## Getting Started
 
 First, run the development server:

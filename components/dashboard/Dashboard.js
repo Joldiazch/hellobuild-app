@@ -17,8 +17,7 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
-import Deposits from './Deposits';
+import Profile from './Profile';
 import Repository from '../repository/Repository';
 import Search from '../search/Search';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
@@ -39,9 +38,6 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -285,7 +281,6 @@ export default function Dashboard() {
           </div>
         </List>
         <Divider />
-        <List>{secondaryListItems}</List>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
@@ -293,7 +288,7 @@ export default function Dashboard() {
           <Grid container spacing={3}>
             {/* Avatar */}
             <Grid item xs={12} md={4} lg={3}>
-              <Deposits
+              <Profile
                 user={data.user}
               />
             </Grid>
